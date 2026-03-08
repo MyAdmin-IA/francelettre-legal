@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suppression de compte — FranceLettre</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; line-height: 1.7; }
+    header { background: linear-gradient(135deg, #1B3A5C, #2196F3); color: white; padding: 30px 20px; }
+    header a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; }
+    header h1 { font-size: 1.6rem; margin-top: 10px; }
+    header p { font-size: 0.85rem; opacity: 0.75; margin-top: 4px; }
+    .container { max-width: 800px; margin: 30px auto; padding: 0 20px 40px; }
+    .section { background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 28px 32px; margin-bottom: 20px; }
+    h2 { color: #1B3A5C; font-size: 1.1rem; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #e8edf2; }
+    p { margin-bottom: 10px; font-size: 0.95rem; }
+    ul { margin: 8px 0 10px 20px; font-size: 0.95rem; }
+    ul li { margin-bottom: 6px; }
+    ol { margin: 8px 0 10px 20px; font-size: 0.95rem; }
+    ol li { margin-bottom: 10px; }
+    strong { color: #1B3A5C; }
+    a { color: #2196F3; }
+    .highlight { background: #f0f7ff; border-left: 4px solid #2196F3; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 0.9rem; }
+    .warning { background: #fff5f5; border-left: 4px solid #e53935; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 0.9rem; color: #c62828; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+    th { background: #f0f4f8; color: #1B3A5C; text-align: left; padding: 10px 12px; font-weight: 600; }
+    td { padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
+    tr:last-child td { border-bottom: none; }
+    .btn { display: inline-block; background: linear-gradient(135deg, #1B3A5C, #2196F3); color: white; padding: 12px 24px; border-radius: 8px; text-decoration: none; font-weight: 600; margin-top: 8px; }
+    footer { text-align: center; padding: 20px; color: #888; font-size: 0.8rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="index.html">← Retour à l'accueil</a>
+    <h1>🗑️ Suppression de compte et données</h1>
+    <p>Conformément au RGPD — art. 17 "Droit à l'effacement"</p>
+  </header>
+
+  <div class="container">
+
+    <div class="section">
+      <h2>Supprimer depuis l'application (méthode recommandée)</h2>
+      <p>La suppression directe depuis l'app est la méthode la plus rapide. Elle supprime immédiatement votre compte et vos données.</p>
+      <ol>
+        <li>Ouvrez <strong>FranceLettre</strong> sur votre téléphone</li>
+        <li>Allez dans <strong>Paramètres</strong> (icône en bas à droite)</li>
+        <li>Appuyez sur <strong>Mon compte</strong></li>
+        <li>Appuyez sur <strong>Supprimer mon compte</strong></li>
+        <li>Confirmez la suppression dans la fenêtre de confirmation</li>
+      </ol>
+      <div class="highlight">
+        ✅ Votre compte Firebase est supprimé immédiatement.<br>
+        ✅ Vos données Firestore sont effacées dans les 30 jours.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Supprimer par email (méthode alternative)</h2>
+      <p>Si vous n'avez plus accès à l'application, envoyez une demande par email :</p>
+      <div class="highlight">
+        📧 <a href="mailto:contact@francelettre.fr?subject=[SUPPRESSION] Demande de suppression de compte&body=Bonjour,%0A%0AJe souhaite supprimer mon compte FranceLettre.%0A%0AEmail du compte : %0AMotif (facultatif) : %0A%0AMerci.">contact@francelettre.fr</a><br>
+        Objet : <strong>[SUPPRESSION] Demande de suppression de compte</strong><br>
+        Indiquez : l'adresse email de votre compte FranceLettre<br><br>
+        ⏱ Traitement sous <strong>72 heures ouvrées</strong>.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Données supprimées</h2>
+      <table>
+        <tr><th>Données</th><th>Délai de suppression</th></tr>
+        <tr><td>Compte Firebase (authentification)</td><td>Immédiat</td></tr>
+        <tr><td>Profil utilisateur (nom, email, adresse)</td><td>Sous 30 jours</td></tr>
+        <tr><td>Courriers rédigés et sauvegardés</td><td>Sous 30 jours</td></tr>
+        <tr><td>Historique des messages IA</td><td>Sous 30 jours</td></tr>
+        <tr><td>Solde de crédits et messages</td><td>Immédiat</td></tr>
+        <tr><td>Données AdMob (identifiant publicitaire)</td><td>Sous 13 mois (Google)</td></tr>
+        <tr><td>Données de crash Firebase (Crashlytics)</td><td>Sous 90 jours</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Données conservées après suppression</h2>
+      <div class="warning">
+        ⚠️ Certaines données doivent être conservées pour des obligations légales, indépendamment de votre demande.
+      </div>
+      <table>
+        <tr><th>Données</th><th>Durée</th><th>Motif</th></tr>
+        <tr><td>Historique des envois postaux</td><td>10 ans</td><td>Obligation comptable (CGI art. 54)</td></tr>
+        <tr><td>Données de transactions (achats)</td><td>5 ans</td><td>Obligation légale fiscale</td></tr>
+      </table>
+    </div>
+
+    <div class="section">
+      <h2>Conséquences de la suppression</h2>
+      <ul>
+        <li>Tous vos <strong>crédits et messages restants</strong> sont perdus définitivement, sans remboursement</li>
+        <li>Vos <strong>abonnements en cours</strong> doivent être résiliés séparément depuis l'App Store ou Google Play</li>
+        <li>Vos <strong>courriers sauvegardés</strong> sont supprimés et ne peuvent pas être récupérés</li>
+        <li>Votre <strong>historique d'envois postaux</strong> n'est plus accessible depuis l'app (conservé pour obligations légales)</li>
+        <li>La suppression est <strong>irréversible</strong> — aucune restauration possible</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Résiliation d'abonnement (séparée de la suppression)</h2>
+      <p>La suppression du compte ne résilie pas automatiquement votre abonnement sur les stores. Vous devez le faire manuellement :</p>
+      <ul>
+        <li><strong>Android :</strong> Google Play → Abonnements → FranceLettre → Résilier</li>
+        <li><strong>iOS :</strong> Réglages → Votre nom → Abonnements → FranceLettre → Résilier</li>
+      </ul>
+      <div class="highlight">
+        ℹ️ Résiliez votre abonnement <strong>avant</strong> de supprimer votre compte pour éviter tout renouvellement indésirable.
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact & Droits RGPD</h2>
+      <p>Pour toute question relative à vos données personnelles (accès, rectification, portabilité, opposition) :</p>
+      <div class="highlight">
+        📧 <a href="mailto:contact@francelettre.fr">contact@francelettre.fr</a> — Réponse sous 30 jours<br>
+        🏛 <strong>CNIL</strong> — <a href="https://www.cnil.fr" target="_blank">www.cnil.fr</a> — 3 place de Fontenoy, 75007 Paris
+      </div>
+    </div>
+
+  </div>
+  <footer>
+    <p>PYANET — SIREN 993 961 184 — © 2026 FranceLettre. Tous droits réservés.</p>
+  </footer>
+</body>
+</html>
