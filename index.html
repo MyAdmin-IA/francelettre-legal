@@ -3,113 +3,81 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CGV — FranceLettre</title>
+  <title>FranceLettre — Informations légales</title>
   <style>
     * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; line-height: 1.7; }
-    header { background: linear-gradient(135deg, #1B3A5C, #2196F3); color: white; padding: 30px 20px; }
-    header a { color: rgba(255,255,255,0.8); text-decoration: none; font-size: 0.9rem; }
-    header h1 { font-size: 1.6rem; margin-top: 10px; }
-    header p { font-size: 0.85rem; opacity: 0.75; margin-top: 4px; }
-    .container { max-width: 800px; margin: 30px auto; padding: 0 20px 40px; }
-    .section { background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 28px 32px; margin-bottom: 20px; }
-    h2 { color: #1B3A5C; font-size: 1.1rem; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #e8edf2; }
-    h3 { color: #2196F3; font-size: 0.95rem; margin: 14px 0 8px; }
-    p { margin-bottom: 10px; font-size: 0.95rem; }
-    ul { margin: 8px 0 10px 20px; font-size: 0.95rem; }
-    ul li { margin-bottom: 6px; }
-    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
-    th { background: #f0f4f8; color: #1B3A5C; text-align: left; padding: 10px 12px; font-weight: 600; }
-    td { padding: 10px 12px; border-bottom: 1px solid #eee; vertical-align: top; }
-    tr:last-child td { border-bottom: none; }
-    strong { color: #1B3A5C; }
-    a { color: #2196F3; }
-    .highlight { background: #f0f7ff; border-left: 4px solid #2196F3; padding: 12px 16px; border-radius: 0 8px 8px 0; margin: 12px 0; font-size: 0.9rem; }
-    footer { text-align: center; padding: 20px; color: #888; font-size: 0.8rem; }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: #f5f7fa; color: #333; }
+    header { background: linear-gradient(135deg, #1B3A5C, #2196F3); color: white; padding: 40px 20px; text-align: center; }
+    header h1 { font-size: 2rem; margin-bottom: 8px; }
+    header p { font-size: 1rem; opacity: 0.85; }
+    .container { max-width: 700px; margin: 40px auto; padding: 0 20px; }
+    .card { background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.08); margin-bottom: 16px; overflow: hidden; transition: transform 0.2s; }
+    .card:hover { transform: translateY(-2px); }
+    .card a { display: flex; align-items: center; padding: 20px 24px; text-decoration: none; color: #1B3A5C; }
+    .card-icon { font-size: 1.8rem; margin-right: 16px; }
+    .card-title { font-size: 1.1rem; font-weight: 600; margin-bottom: 4px; }
+    .card-desc { font-size: 0.85rem; color: #666; }
+    footer { text-align: center; padding: 30px 20px; color: #888; font-size: 0.8rem; }
+    footer a { color: #2196F3; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html">← Retour à l'accueil</a>
-    <h1>🛒 Conditions Générales de Vente</h1>
-    <p>Version 1.0 — En vigueur depuis le 1er avril 2026</p>
+    <h1>✉️ FranceLettre</h1>
+    <p>Vos courriers administratifs simplifiés par l'IA</p>
+    <p style="margin-top:8px; font-size:0.85rem; opacity:0.7;">PYANET — SIREN 993 961 184</p>
   </header>
-
   <div class="container">
-
-    <div class="section">
-      <h2>Article 1 — Champ d'Application</h2>
-      <p>Les présentes CGV s'appliquent à tout achat dans l'application <strong>FranceLettre</strong>, éditée par PYANET (SIREN 993 961 184).</p>
+    <div class="card">
+      <a href="terms-of-service.html">
+        <span class="card-icon">📋</span>
+        <div>
+          <div class="card-title">Conditions Générales d'Utilisation (CGU)</div>
+          <div class="card-desc">Règles d'utilisation du service FranceLettre</div>
+        </div>
+      </a>
     </div>
-
-    <div class="section">
-      <h2>Article 2 — Produits et Tarifs</h2>
-
-      <h3>2.1 Crédits IA</h3>
-      <table>
-        <tr><th>Pack</th><th>Crédits</th><th>Messages</th><th>Prix TTC</th><th>Validité</th></tr>
-        <tr><td>Pack 5 crédits</td><td>5 crédits</td><td>10 messages</td><td><strong>0,99 €</strong></td><td>Sans limite</td></tr>
-        <tr><td>Pack 15 crédits</td><td>15 crédits</td><td>30 messages</td><td><strong>3,99 €</strong></td><td>Sans limite</td></tr>
-      </table>
-      <p>Crédits valables sans limite de durée, non remboursables, non cessibles.</p>
-
-      <h3>2.2 Abonnements</h3>
-      <table>
-        <tr><th>Formule</th><th>Crédits/mois</th><th>Messages/mois</th><th>Prix TTC</th></tr>
-        <tr><td>Mensuel</td><td>30 crédits</td><td>100 messages</td><td><strong>4,99 €/mois</strong></td></tr>
-        <tr><td>Annuel</td><td>50 crédits</td><td>150 messages</td><td><strong>39,99 €/an</strong></td></tr>
-      </table>
-      <p>Sans publicité. Renouvellement automatique sauf résiliation avant la date d'échéance.</p>
-
-      <h3>2.3 Envois postaux (via MySendingBox / groupe CORUS)</h3>
-      <table>
-        <tr><th>Mode d'envoi</th><th>Délai</th><th>Prix TTC</th></tr>
-        <tr><td>Lettre simple</td><td>J+3 à J+5 ouvrés</td><td><strong>2,99 €</strong></td></tr>
-        <tr><td>Lettre suivie</td><td>J+3 à J+5 ouvrés</td><td><strong>4,99 €</strong></td></tr>
-        <tr><td>Recommandée simple (sans AR)</td><td>J+2 à J+4 ouvrés</td><td><strong>9,99 €</strong></td></tr>
-        <tr><td>Recommandée avec accusé de réception</td><td>J+2 à J+4 ouvrés</td><td><strong>13,99 €</strong></td></tr>
-      </table>
-      <div class="highlight">
-        ℹ️ Les tarifs incluent l'impression, la mise sous pli, l'affranchissement et le dépôt à La Poste. Ils peuvent être révisés sans préavis.
-      </div>
+    <div class="card">
+      <a href="cgv.html">
+        <span class="card-icon">🛒</span>
+        <div>
+          <div class="card-title">Conditions Générales de Vente (CGV)</div>
+          <div class="card-desc">Tarifs, paiements, abonnements et envois postaux</div>
+        </div>
+      </a>
     </div>
-
-    <div class="section">
-      <h2>Article 3 — Commande et Paiement</h2>
-      <p>Les paiements sont traités via <strong>Apple App Store</strong> ou <strong>Google Play Store</strong>. FranceLettre n'a pas accès aux données bancaires de l'utilisateur.</p>
+    <div class="card">
+      <a href="privacy-policy.html">
+        <span class="card-icon">🔒</span>
+        <div>
+          <div class="card-title">Politique de Confidentialité</div>
+          <div class="card-desc">Collecte, traitement et protection de vos données personnelles (RGPD)</div>
+        </div>
+      </a>
     </div>
-
-    <div class="section">
-      <h2>Article 4 — Droit de Rétractation</h2>
-      <p>Conformément à l'article <strong>L221-28 du Code de la consommation</strong>, le droit de rétractation ne s'applique pas aux contenus numériques dont l'exécution a commencé avec l'accord de l'utilisateur.</p>
-      <p>Pour les envois postaux : une fois l'envoi confirmé et transmis à MySendingBox, la commande est <strong>irrévocable</strong>.</p>
+    <div class="card">
+      <a href="acceptable-use.html">
+        <span class="card-icon">🛡️</span>
+        <div>
+          <div class="card-title">Politique d'usage et anti-abus</div>
+          <div class="card-desc">Règles d'utilisation acceptable et mesures contre les abus</div>
+        </div>
+      </a>
     </div>
-
-    <div class="section">
-      <h2>Article 5 — Résiliation des Abonnements</h2>
-      <p>Résiliation possible à tout moment via les paramètres Apple ou Google. Effet à la fin de la période en cours. <strong>Aucun remboursement au prorata.</strong></p>
-      <ul>
-        <li><strong>Android :</strong> Google Play → Abonnements → FranceLettre → Résilier</li>
-        <li><strong>iOS :</strong> Réglages → Votre nom → Abonnements → FranceLettre → Résilier</li>
-      </ul>
+    <div class="card">
+      <a href="delete-account.html">
+        <span class="card-icon">🗑️</span>
+        <div>
+          <div class="card-title">Suppression de compte et données</div>
+          <div class="card-desc">Comment supprimer votre compte et vos données personnelles</div>
+        </div>
+      </a>
     </div>
-
-    <div class="section">
-      <h2>Article 6 — Responsabilité Postale</h2>
-      <p>FranceLettre ne saurait être tenu responsable des retards, pertes ou erreurs d'acheminement imputables à MySendingBox ou La Poste.</p>
-    </div>
-
-    <div class="section">
-      <h2>Article 7 — Contact</h2>
-      <div class="highlight">
-        📧 <a href="mailto:contact@francelettre.fr">contact@francelettre.fr</a><br>
-        PYANET — SIREN 993 961 184
-      </div>
-    </div>
-
   </div>
   <footer>
-    <p>PYANET — SIREN 993 961 184 — © 2026 FranceLettre. Tous droits réservés.</p>
+    <p>PYANET — Micro-entreprise — SIREN 993 961 184</p>
+    <p style="margin-top:6px;">Contact : <a href="mailto:contact@francelettre.fr">contact@francelettre.fr</a></p>
+    <p style="margin-top:6px;">© 2026 FranceLettre. Tous droits réservés.</p>
   </footer>
 </body>
 </html>
