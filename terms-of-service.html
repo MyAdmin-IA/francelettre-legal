@@ -14,9 +14,13 @@
     .container { max-width: 800px; margin: 30px auto; padding: 0 20px 40px; }
     .section { background: white; border-radius: 12px; box-shadow: 0 2px 12px rgba(0,0,0,0.07); padding: 28px 32px; margin-bottom: 20px; }
     h2 { color: #1B3A5C; font-size: 1.1rem; margin-bottom: 12px; padding-bottom: 8px; border-bottom: 2px solid #e8edf2; }
+    h3 { color: #1B3A5C; font-size: 1rem; margin: 14px 0 8px 0; }
     p { margin-bottom: 10px; font-size: 0.95rem; }
     ul { margin: 8px 0 10px 20px; font-size: 0.95rem; }
     ul li { margin-bottom: 6px; }
+    table { width: 100%; border-collapse: collapse; margin: 12px 0; font-size: 0.9rem; }
+    th, td { border: 1px solid #e0e0e0; padding: 10px 12px; text-align: left; }
+    th { background: #f0f4f8; color: #1B3A5C; font-weight: 600; }
     strong { color: #1B3A5C; }
     a { color: #2196F3; }
     footer { text-align: center; padding: 20px; color: #888; font-size: 0.8rem; }
@@ -26,7 +30,7 @@
   <header>
     <a href="index.html">← Retour à l'accueil</a>
     <h1>📋 Conditions Générales d'Utilisation</h1>
-    <p>Version 1.1 — En vigueur depuis le 22 mars 2026</p>
+    <p>Version 1.2 — En vigueur depuis le 2 avril 2026</p>
   </header>
 
   <div class="container">
@@ -43,6 +47,7 @@
         <li>La rédaction assistée par intelligence artificielle de courriers administratifs à partir de modèles</li>
         <li>La consultation d'un assistant juridique IA à titre informatif (non contraignant)</li>
         <li>L'envoi postal physique des courriers via le service Merci Facteur</li>
+        <li>Le suivi en temps réel de l'acheminement des courriers envoyés</li>
       </ul>
     </div>
 
@@ -62,6 +67,7 @@
       <p><strong>Packs ponctuels :</strong> les crédits et messages achetés via un pack sont acquis définitivement, sans limite de durée, non remboursables et non cessibles.</p>
       <p><strong>Abonnements :</strong> les crédits et messages inclus dans un abonnement sont remis à zéro à chaque renouvellement (mensuel ou annuel). Les crédits et messages non utilisés ne sont pas reportés au cycle suivant.</p>
       <p>L'utilisateur peut obtenir <strong>2 crédits et 3 messages gratuits</strong> en visionnant une publicité vidéo (maximum 10 vidéos par 24 heures).</p>
+      <p><strong>Compensation en cas d'annulation postale :</strong> des crédits et messages peuvent être accordés à titre de compensation en cas d'annulation d'un envoi postal, selon les conditions décrites à l'article 7.</p>
     </div>
 
     <div class="section">
@@ -72,36 +78,79 @@
         <li><strong>Lettre Recommandée avec Accusé de Réception (LRAR)</strong> — 14,99 € TTC (AR numérisé)</li>
       </ul>
       <p>En commandant un envoi, l'utilisateur autorise la transmission de son courrier (nom/adresse expéditeur, nom/adresse destinataire, contenu PDF) à Merci Facteur pour impression, mise sous pli et dépôt à La Poste.</p>
+      <p>L'utilisateur peut suivre l'acheminement de son courrier en temps réel depuis l'application (impression, prise en charge, distribution, réception de l'accusé de réception le cas échéant).</p>
       <p>FranceLettre décline toute responsabilité en cas de retard, perte ou non-distribution imputable à La Poste ou Merci Facteur.</p>
     </div>
 
     <div class="section">
-      <h2>Article 7 — Responsabilité de l'IA</h2>
+      <h2>Article 7 — Annulation d'envoi postal et droit de rétractation</h2>
+
+      <h3>7.1 — Exclusion du droit de rétractation</h3>
+      <p>Conformément à l'article <strong>L221-28, 1°</strong> du Code de la consommation, le droit de rétractation ne peut être exercé pour les contrats de fourniture de services pleinement exécutés avant la fin du délai de rétractation et dont l'exécution a commencé après accord préalable exprès du consommateur et renoncement exprès à son droit de rétractation.</p>
+      <p>En validant le paiement d'un envoi postal (Lettre Suivie ou LRAR), l'utilisateur reconnaît expressément que l'exécution du service d'impression et d'envoi postal commence immédiatement après la validation du paiement, et <strong>renonce expressément à son droit de rétractation</strong> pour ce service.</p>
+
+      <h3>7.2 — Possibilité d'annulation</h3>
+      <p>Malgré l'exclusion du droit de rétractation, FranceLettre offre la possibilité d'annuler un envoi postal depuis l'application, sous réserve que le courrier n'ait pas déjà été distribué au destinataire.</p>
+      <p>L'annulation est soumise aux conditions suivantes :</p>
+      <ul>
+        <li><strong>Courrier non encore imprimé :</strong> l'annulation est effective et intégralement prise en charge par le prestataire postal. L'utilisateur bénéficie d'une compensation en crédits IA et messages (voir barème ci-dessous).</li>
+        <li><strong>Courrier déjà imprimé mais non distribué :</strong> l'annulation est effective mais les frais d'impression sont retenus par le prestataire postal et ne peuvent être remboursés. L'utilisateur bénéficie d'une compensation réduite en crédits IA et messages, à titre de geste commercial.</li>
+        <li><strong>Courrier déjà distribué :</strong> l'annulation n'est plus possible.</li>
+      </ul>
+
+      <h3>7.3 — Barème de compensation</h3>
+      <p>En cas d'annulation, la compensation suivante est automatiquement accordée sous forme de crédits IA et de messages :</p>
+      <table>
+        <tr>
+          <th></th>
+          <th>Lettre Suivie (4,99 €)</th>
+          <th>LRAR (14,99 €)</th>
+        </tr>
+        <tr>
+          <td><strong>Avant impression</strong></td>
+          <td>25 crédits + 50 messages</td>
+          <td>75 crédits + 150 messages</td>
+        </tr>
+        <tr>
+          <td><strong>Après impression</strong></td>
+          <td>10 crédits + 20 messages</td>
+          <td>25 crédits + 50 messages</td>
+        </tr>
+      </table>
+      <p>Ce barème est applicable à compter du 2 avril 2026. FranceLettre se réserve le droit de modifier ce barème à tout moment, la version en vigueur au moment de l'annulation faisant foi.</p>
+      <p>Les crédits et messages accordés à titre de compensation sont acquis définitivement et soumis aux mêmes conditions d'utilisation que les crédits achetés (article 5).</p>
+
+      <h3>7.4 — Absence de remboursement monétaire</h3>
+      <p>Aucun remboursement monétaire (sur le moyen de paiement d'origine ou sous toute autre forme) n'est proposé en cas d'annulation. La compensation prend exclusivement la forme de crédits IA et de messages, conformément au barème ci-dessus.</p>
+    </div>
+
+    <div class="section">
+      <h2>Article 8 — Responsabilité de l'IA</h2>
       <p>Les courriers générés par Mistral AI sont fournis à titre de <strong>suggestion</strong>. L'utilisateur reste seul responsable du contenu final envoyé. FranceLettre ne saurait être tenu responsable des conséquences juridiques découlant de l'utilisation des courriers générés.</p>
     </div>
 
     <div class="section">
-      <h2>Article 8 — Propriété Intellectuelle</h2>
+      <h2>Article 9 — Propriété Intellectuelle</h2>
       <p>L'application FranceLettre, son design, son code source et ses modèles de lettres sont la propriété exclusive de <strong>PYANET</strong> (SIREN 993 961 184). La marque FranceLettre est déposée auprès de l'INPI sous le n°5237629. Toute reproduction non autorisée est interdite (art. L.335-2 CPI). Les courriers générés par l'utilisateur lui appartiennent.</p>
     </div>
 
     <div class="section">
-      <h2>Article 9 — Données Personnelles</h2>
+      <h2>Article 10 — Données Personnelles</h2>
       <p>Voir la <a href="privacy-policy.html">Politique de Confidentialité</a> accessible sur cette page.</p>
     </div>
 
     <div class="section">
-      <h2>Article 10 — Suspension et Résiliation</h2>
+      <h2>Article 11 — Suspension et Résiliation</h2>
       <p>FranceLettre se réserve le droit de suspendre ou supprimer tout compte en cas d'utilisation abusive, frauduleuse ou contraire aux présentes CGU, sans préavis ni remboursement des crédits restants.</p>
     </div>
 
     <div class="section">
-      <h2>Article 11 — Modification des CGU</h2>
+      <h2>Article 12 — Modification des CGU</h2>
       <p>FranceLettre peut modifier les présentes CGU à tout moment. L'utilisateur sera notifié dans l'application. La poursuite de l'utilisation vaut acceptation.</p>
     </div>
 
     <div class="section">
-      <h2>Article 12 — Droit Applicable et Juridiction</h2>
+      <h2>Article 13 — Droit Applicable et Juridiction</h2>
       <p>Les présentes CGU sont soumises au droit français. Tout litige relève des tribunaux de <strong>Lyon (France)</strong>. Médiation disponible via MEDICYS (<a href="https://www.medicys.fr" target="_blank">www.medicys.fr</a>).</p>
     </div>
 
